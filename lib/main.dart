@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 // main func
 void main() {
-  runApp(contact());
+  runApp(const contact());
 }
 
 class contact extends StatelessWidget {
@@ -29,11 +29,14 @@ class contact extends StatelessWidget {
             Center(
                 child: Image.asset(
               'images/contact_us.jpg',
-              height: 200,
+              height: 150,
             )),
             const Text(
               "If you need help \n please contact us!",
               style: TextStyle(fontSize: 15, color: Colors.blueGrey),
+            ),
+            const SizedBox(
+              height: 7,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -43,10 +46,20 @@ class contact extends StatelessWidget {
                   child: Container(
                     height: 100,
                     width: 150,
-                    color: Colors.grey,
+                    decoration:
+                        const BoxDecoration(color: Colors.white, boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        blurRadius: 20,
+                      ),
+                    ]),
                     child: Column(
                       children: const [
-                        Icon(Icons.alternate_email, color: Colors.orange, size: 50,),
+                        Icon(
+                          Icons.alternate_email,
+                          color: Colors.orange,
+                          size: 50,
+                        ),
                         Text("Write to Us"),
                         Text("help@gmail.com"),
                       ],
@@ -59,12 +72,25 @@ class contact extends StatelessWidget {
                   child: Container(
                     height: 100,
                     width: 150,
-                    color: Colors.grey,
+                    decoration:
+                        const BoxDecoration(color: Colors.white, boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        blurRadius: 20,
+                      ),
+                    ]),
                     child: Column(
                       children: const [
-                        Icon(Icons.help_outline, color: Colors.orange, size: 50,),
+                        Icon(
+                          Icons.help_outline,
+                          color: Colors.orange,
+                          size: 50,
+                        ),
                         Text("FAQs"),
-                        Text("Frequently Asked Questions", style: TextStyle(fontSize: 11),),
+                        Text(
+                          "Frequently Asked Questions",
+                          style: TextStyle(fontSize: 11),
+                        ),
                       ],
                     ),
                     padding: const EdgeInsets.symmetric(vertical: 8),
@@ -80,10 +106,20 @@ class contact extends StatelessWidget {
                   child: Container(
                     height: 100,
                     width: 150,
-                    color: Colors.grey,
+                    decoration:
+                        const BoxDecoration(color: Colors.white, boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        blurRadius: 20,
+                      ),
+                    ]),
                     child: Column(
                       children: const [
-                        Icon(Icons.phone, color: Colors.orange, size: 50,),
+                        Icon(
+                          Icons.phone,
+                          color: Colors.orange,
+                          size: 50,
+                        ),
                         Text("Phone Number"),
                         Text("+905064066030"),
                       ],
@@ -96,10 +132,20 @@ class contact extends StatelessWidget {
                   child: Container(
                     height: 100,
                     width: 150,
-                    color: Colors.grey,
+                    decoration:
+                        const BoxDecoration(color: Colors.white, boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        blurRadius: 20,
+                      ),
+                    ]),
                     child: Column(
                       children: const [
-                        Icon(Icons.location_city, color: Colors.orange, size: 50,),
+                        Icon(
+                          Icons.location_city,
+                          color: Colors.orange,
+                          size: 50,
+                        ),
                         Text("Address"),
                         Text("İstanbul"),
                       ],
@@ -108,7 +154,15 @@ class contact extends StatelessWidget {
                   ),
                 ),
               ],
-            )
+            ),
+            const Text(
+              "Copyright. 2022 Gokdeemir",
+              style: TextStyle(color: Colors.blue),
+            ),
+            const Text(
+              "All rights are reserved",
+              style: TextStyle(color: Colors.blue),
+            ),
           ],
         ),
       ),
