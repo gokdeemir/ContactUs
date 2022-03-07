@@ -28,7 +28,7 @@ class contact extends StatelessWidget {
             ),
             Center(
                 child: Image.asset(
-              'images/contact_us.jpg',
+              'images/contact_us.png',
               height: 150,
             )),
             const Text(
